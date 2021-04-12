@@ -18,8 +18,7 @@ const toLowerCase = (strategies) => {
     return strategiesTemp
 }
 
-instance = new CreateUserStrategy()
 
 module.exports = {
-    instance
+    CreateUserStrategy: new CreateUserStrategy()
 }

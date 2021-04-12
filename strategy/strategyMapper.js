@@ -1,6 +1,6 @@
 const { CreateOperatorStrategy } = require('./createOperatorStrategy') 
 const { CreateDoctorStrategy } = require('./createDoctorStrategy')
-const { instance: createUserStrategy } = require('./createUserStrategy')
+const { createUserStrategy } = require('./createUserStrategy')
 
 const strategies = {
     Operator: new CreateOperatorStrategy(),
