@@ -4,12 +4,19 @@ const CreateUserStrategy = function () {
 
 CreateUserStrategy.prototype = {
     createStrategies: (strategies) => {
-        this.strategies = strategies
+        this.strategies = toLowerCase(strategies) 
     },
     findStrategy: (strategyName) => {
-        return this.strategies[strategyName] 
+        return this.strategies[strategyName.toLowerCase()] 
     },
     create: (param) => this.strategy.create(param)
+}
+
+// !It has to be an Utils function
+const toLowerCase = (strategies) => {
+    const strategiesTemp = {}
+    Object.keys(strategies).map((keys) => {return strategiesTemp[keys.toLocaleLowerCase()] = strategies[keys]})
+    return strategiesTemp
 }
 
 instance = new CreateUserStrategy()
