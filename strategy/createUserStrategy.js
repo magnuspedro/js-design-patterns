@@ -8,8 +8,7 @@ CreateUserStrategy.prototype = {
     },
     findStrategy: (strategyName) => {
         return this.strategies[strategyName.toLowerCase()] 
-    },
-    create: (param) => this.strategy.create(param)
+    }
 }
 
 //! It has to be an Utils function
