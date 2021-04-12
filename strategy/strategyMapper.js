@@ -8,5 +8,3 @@ const strategies = {
 }
 
 createUserStrategy.createStrategies(strategies)
-
-module.exports = strategies
