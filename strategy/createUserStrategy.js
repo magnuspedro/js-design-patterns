@@ -12,7 +12,7 @@ CreateUserStrategy.prototype = {
     create: (param) => this.strategy.create(param)
 }
 
-// !It has to be an Utils function
+//! It has to be an Utils function
 const toLowerCase = (strategies) => {
     const strategiesTemp = {}
     Object.keys(strategies).map((keys) => {return strategiesTemp[keys.toLocaleLowerCase()] = strategies[keys]})
