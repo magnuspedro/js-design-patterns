@@ -20,5 +20,5 @@ const toLowerCase = (strategies) => {
 
 
 module.exports = {
-    CreateUserStrategy: new CreateUserStrategy()
+    createUserStrategy: new CreateUserStrategy()
 }
